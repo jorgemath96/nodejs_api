@@ -1,0 +1,18 @@
+{
+  "name": "01",
+  "version": "1.0.0",
+  "description": "Primera App (por definir)",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jorge Osorio",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.7",
+    "handlebars": "^4.7.7",
+    "morgan": "^1.10.0"
+  }
+}

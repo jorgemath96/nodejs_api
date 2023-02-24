@@ -1,0 +1,55 @@
+<div class="container">
+  <div class="row text-center">
+    <div class="col-1"></div>
+    <div class="col-10">
+      <hr>
+      <h1> Jugaste contra la App. </h1>
+      <hr>
+    </div>
+    <div class="col-1"></div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row text-center">
+    <div class="col col-4">
+      <div class="card" style="width: 300px;">
+        <img src="../../images/{{ sele }}.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h4 class="card-title">Elegiste:</h4>
+          <button class="btn btn-info btn-block" disabled>
+            {{ seleName }}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col col-4">
+      <div class="card" style="width: 300px;">
+        <img src="../../images/{{ result }}.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h4 class="card-title">Resultado</h4>
+          <form action="/api/rps" method="post">
+            <div class="form-group">
+              <button class="btn btn-primary btn-block">
+                Jugar de nuevo
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="col col-4">
+      <div class="card" style="width: 300px;">
+        <img src="../../images/{{ seleWeb }}.jpg" class="card-img-top" alt="..." height="350px">
+        <div class="card-body">
+          <h4 class="card-title">La App eligió:</h4>
+          <button class="btn btn-info btn-block" disabled>
+            {{ seleWebName }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
