@@ -29,7 +29,7 @@ app.use(express.json());
 
 
 // Rutas...
-app.use('/api', require('./routes/rps.js'));
+app.use('/api', require('./src/routes/rps.js'));
 app.use('*', (req, res) => {
   res.redirect('/api/rps');
 });
